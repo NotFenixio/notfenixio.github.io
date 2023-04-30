@@ -1,225 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-<meta name="google-site-verification" content="o33vS5VplSYl5mVWkngrgukqCRw4tQuKH4eOAbjRpjc" />
-  <title>NotFenixio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			background: rgb(76, 86, 58);
-		}
-
-		.gradient-text-title {
-			top: -25px;
-  
-        	font-size: 45px;
-        	text-align: center;
-        	font-family: Arial, 
-            Helvetica, sans-serif;
-        	background: linear-gradient(to right, #0080d4, #00ff95);
-        	-webkit-text-fill-color: transparent;
-        	-webkit-background-clip: text;
-		}
-		
-		.text {
-		    font-size: 20px;
-		    text-align: center;
-		    font-family: Arial, 
-            Helvetica, sans-serif;
-            color: #84b6f4;
-		}
-		
-		li {
-		    font-size: 20px;
-		    text-align: center;
-		    font-family: Arial, 
-            Helvetica, sans-serif;
-            color: #0080d4;
-		}
-		
-		.logo {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-            border-radius: 20%;
-		}
-		@import url('https://fonts.googleapis.com/css?family=Varela+Round');
-		html, body {
-    		overflow-x: hidden;
-    		height: 100%;
-		}
-
-		body {
-			background: rgb(58, 77, 86);
-		}
-		
-		.header {
-			display: block;
-			margin: 0 auto;
-			width: 100%;
-			max-width: 100%;
-			box-shadow: none;
-			background-color: transparent;
-			position: fixed;
-			height: 60px!important;
-			overflow: hidden;
-			z-index: 10;
-		}
-		.main {
-			margin: 0 auto;
-			display: block;
-			height: 100%;
-			margin-top: 60px;
-		}
-		.mainInner{
-			display: table;
-			height: 100%;
-			width: 100%;
-			text-align: center;
-		}
-		.mainInner div{
-			display:table-cell;
-			vertical-align: middle;
-			font-size: 3em;
-			font-weight: bold;
-			letter-spacing: 1.25px;
-		}
-		#sidebarMenu {
-			height: 100%;
-			position: fixed;
-			left: 0;
-			width: 250px;
-			margin-top: 60px;
-			transform: translateX(-250px);
-			transition: transform 250ms ease-in-out;
-			background: linear-gradient(180deg, #09009f, #00ff95);
-			border-radius: 20px;
-		}
-		.sidebarMenuInner{
-			margin:0;
-			padding:0;
-		}
-		.sidebarMenuInner li{
-			list-style: none;;
-			text-transform: uppercase;
-			font-weight: bold;
-			padding: 20px;
-			cursor: pointer;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-		}
-		.sidebarMenuInner li span{
-			display: block;
-			font-size: 14px;
-			color: rgba(255, 255, 255, 0.50);
-		}
-		.sidebarMenuInner li a{
-			color: #fff;
-			text-transform: uppercase;
-			font-weight: bold;
-			cursor: pointer;
-			text-decoration: none;
-		}
-		input[type="checkbox"]:checked ~ #sidebarMenu {
-			transform: translateX(0);
-		}
-
-		input[type=checkbox] {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			display: none;
-		}
-		.sidebarIconToggle {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			cursor: pointer;
-			position: absolute;
-			z-index: 99;
-			height: 100%;
-			width: 100%;
-			top: 22px;
-			left: 15px;
-			height: 22px;
-			width: 22px;
-		}
-		.spinner {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			position: absolute;
-			height: 3px;
-			width: 100%;
-			background-color: #fff;
-		}
-		.horizontal {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			position: relative;
-			float: left;
-			margin-top: 3px;
-		}
-		.diagonal.part-1 {
-			position: relative;
-			transition: all 0.3s;
-			box-sizing: border-box;
-			float: left;
-		}
-		.diagonal.part-2 {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			position: relative;
-			float: left;
-			margin-top: 3px;
-		}
-		input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			opacity: 0;
-		}
-		input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			transform: rotate(135deg);
-			margin-top: 8px;
-		}
-		input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-			transition: all 0.3s;
-			box-sizing: border-box;
-			transform: rotate(-135deg);
-			margin-top: -9px;
-		}
-	</style>  
-</head>
-<body>
-
-<div class="header"></div>
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li>NotFenixio <span>Developer</span></li>
-      <li><a href="https://github.com/ParallelUniverseCode" target="_blank">Company</a></li>
-      <li><a href="https://github.com/NotFenixio" target="_blank">GitHub</a></li>
-	  <li><a href="https://github.com/NotFenixioFilix" target="_blank">GitHub sub-account</a></li>
-	  <li><a href="https://es.wikipedia.org/wiki/Usuario:NotFenixio" target="_blank">Wikipedia account</a></li>
-	  <li><a href="https://scratch.mit.edu/users/josueart/" target="_blank">Scratch main account</a></li>
-
-    </ul>
-  </div>
-  <div id='center' class="main center">
-	<h1 class="gradient-text-title">NotFenixio</h1>
-	<img src="https://avatars.githubusercontent.com/u/103071021?s=400&u=7019280d97de7aa878d46ce34b526b9180e3cfaf&v=4" class="logo">
-	<p class="text">Hello.<br>I'm a student from Spain that loves foxes, traveling and programming. <br><br>Some of the languages i dominate:</p>
-	<li>PHP</li>
-	<li>HTML/CSS</li>
-	<p class="text">Languages i'm learning:</p>
-	<li>Python</li>
-	<li>JavaScript</li>
-    </div>
-  </div>
-</body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="o33vS5VplSYl5mVWkngrgukqCRw4tQuKH4eOAbjRpjc" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NotFenixio</title>
+        <meta name="description" content="Welcome to NotFenixio's page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="min-h-full">
+            <nav class="bg-gray-800">
+              <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                      <img class="h-8 w-8 rounded-full" src="https://avatars.githubusercontent.com/u/103071021?s=40&u=7019280d97de7aa878d46ce34b526b9180e3cfaf" alt="Your Company">
+                    </div>
+                    <div class="hidden md:block">
+                      <div class="ml-10 flex items-baseline space-x-4">
+                        <!-- Enable current homepage -->
+                        <a href="https://notfenixio.github.io" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Homepage</a>
+                        <a href="https://notfenixio.github.io/favorite.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Favorite resources</a>
+                        <a href="https://notfenixio.github.io/projects.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="https://notfenixio.github.io/museum.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Super Duper Museum</a>
+                        <a href="https://notfenixio.github.io/minigame.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Minigame</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          
+            <header class="bg-white shadow">
+              <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">Homepage</h1>
+              </div>
+            </header>
+            <main>
+              <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                <p>Hello.<BR>
+                    I'm a student from Spain that loves foxes, traveling and programming.<br>
+                    
+                    Some of the languages i dominate:</p>
+                    <li>PHP</li>
+                    <li>HTML/JS/CSS</li>
+                    <li>Python</li>
+              </div>
+            </main>
+          </div>
+    </body>
 </html>
