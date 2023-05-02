@@ -57,5 +57,37 @@
       <changefreq>weekly</changefreq>
 
    </url>
+   
+   <url>
 
+      <loc>https://notfenixio.github.io/favorite.html</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://notfenixio.github.io/projects.html</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://notfenixio.github.io/museum.html</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://notfenixio.github.io/minigame.html</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+   
 </urlset>
