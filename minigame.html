@@ -12,7 +12,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
+    <style>
+      .minigameClass { }
+    </style>
+      </head>
     <body>
         <!--[if lt IE 7]>
             <p>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
@@ -48,13 +51,25 @@
             <main>
               <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
                 <script>
+                  
                   function getRandomNum(min, max) {
                     return Math.random() * (max - min) + min;
                   }
                   
+                  function test() {
+                      var texts = ["When i did join GitHub?", "Test1", "Test2", "Test3", "Test4"];
+                  var randQuest = texts[getRandomNum(0, 4)];
+
+                  document.getElementById("minigame").innerHTML = randQuest;
+                  }
+                  
+                  window.onload = function() {
+                      test();
+                    }
+                  
                 </script>
-                
-              </div>
+                <p id="minigame">Change</p>
+                </div>
             </main>
           </div>
     </body>
