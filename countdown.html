@@ -6,36 +6,34 @@
   <link rel='stylesheet' href='https://unpkg.com/daisyui@latest/dist/full.css'>
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="grid grid-flow-col gap-5 text-center auto-cols-max p-4">
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span id="days" style="--value:15;"></span>
-    </span>
-    days
-  </div> 
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span id="hours" style="--value:10;"></span>
-    </span>
-    hours
-  </div> 
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span id="minutes" style="--value:24;"></span>
-    </span>
-    min
-  </div> 
-  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span id="seconds" style="--value:60;"></span>
-    </span>
-    sec
+<body class="flex justify-center items-center h-screen">
+  <div class="grid grid-flow-col gap-5 text-center">
+    <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+      <span class="countdown font-mono text-7xl">
+        <span id="days" style="--value:15;"></span>
+      </span>
+      <span class="text-xl">days</span>
+    </div> 
+    <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+      <span class="countdown font-mono text-7xl">
+        <span id="hours" style="--value:10;"></span>
+      </span>
+      <span class="text-xl">hours</span>
+    </div> 
+    <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+      <span class="countdown font-mono text-7xl">
+        <span id="minutes" style="--value:24;"></span>
+      </span>
+      <span class="text-xl">min</span>
+    </div> 
+    <div class="flex flex-col bg-neutral rounded-box text-neutral-content">
+      <span class="countdown font-mono text-7xl">
+        <span id="seconds" style="--value:60;"></span>
+      </span>
+      <span class="text-xl">sec</span>
+    </div>
   </div>
-</div>
-<!-- partial -->
-  <script src='https://cdn.tailwindcss.com'></script><script  src="https://notfenixio.github.io/script.js"></script>
-
 </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://notfenixio.github.io/script.js"></script>
 </html>
