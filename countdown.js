@@ -1,7 +1,8 @@
 import { startConfetti } from "https://notfenixio.github.io/utils/confetti.js";
 
 let counter = 60;
-var date = new Date("March 25, 2023 10:27:00").getTime();
+var date = new Date("June 21, 2023 13:00:00").getTime();
+let container = document.getElementById("container");
 let Cdays = document.getElementById('days');
 let Chours = document.getElementById('hours');
 let Cminutes = document.getElementById('minutes');
@@ -27,7 +28,8 @@ var x = setInterval(function() {
 	Cseconds.style.setProperty("--value", seconds);
   // If finished, do smth
   if (distance < 0) {
+    container.innerHTML = "";
     clearInterval(x);
-    startConfetti();
+    startConfetti;
   }
 }, 1000);
