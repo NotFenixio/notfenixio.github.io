@@ -1,9 +1,7 @@
-/*
-https://cdn.tailwindcss.com
-*/
+import { startConfetti } from "https://notfenixio.github.io/utils/confetti.js";
 
 let counter = 60;
-var date = new Date("June 21, 2023 13:00:00").getTime();
+var date = new Date("March 25, 2023 10:27:00").getTime();
 let Cdays = document.getElementById('days');
 let Chours = document.getElementById('hours');
 let Cminutes = document.getElementById('minutes');
@@ -30,6 +28,6 @@ var x = setInterval(function() {
   // If finished, do smth
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    startConfetti();
   }
 }, 1000);
