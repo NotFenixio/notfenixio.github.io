@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Replit</title>
+    <script>
+        // Function to get URL parameters
+        function getUrlParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Check if the "to" parameter is set to "slr"
+        const toParam = getUrlParam("to");
+        if (toParam === "slr") {
+            window.location.replace("https://replit.com/@NotFenixio1/simple-linear-regression#main.py");
+        }
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="https://replit.com/@NotFenixio1/simple-linear-regression#main.py">click here</a>.</p>
+</body>
+</html>
