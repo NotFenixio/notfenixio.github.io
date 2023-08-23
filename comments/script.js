@@ -2,7 +2,7 @@ document.getElementById('get-comment-btn').addEventListener('click', function() 
     var username = document.getElementById('username').value;
     var projectId = document.getElementById('project-id').value;
     
-    fetch(`https://api.scratch.mit.edu/users/${username}/projects/${projectId}/comments`)
+    fetch(`https://trampoline.turbowarp.org/users/${username}/projects/${projectId}/comments`)
       .then(response => response.json())
       .then(comments => {
         if (comments.length > 0) {
