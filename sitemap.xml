@@ -1,92 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
    <url>
-
-      <loc>https://notfenixio.github.io</loc>
-
+      <loc>https://notfenixio.is-a.dev</loc>
       <changefreq>monthly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/404.ico</loc>
-
+      <loc>https://notfenixio.is-a.dev/dummy.pdf</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/dummy.pdf</loc>
-
+      <loc>https://notfenixio.is-a.dev/index</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/index.html</loc>
-
+      <loc>https://notfenixio.is-a.dev/README.md</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/favicon.ico</loc>
-
+      <loc>https://notfenixio.is-a.dev/favorite</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/README.md</loc>
-
+      <loc>https://notfenixio.is-a.dev/projects</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-   
    <url>
-
-      <loc>https://notfenixio.github.io/favorite.html</loc>
-
+      <loc>https://notfenixio.is-a.dev/museum</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/projects.html</loc>
-
+      <loc>https://notfenixio.is-a.dev/minigame</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/museum.html</loc>
-
+      <loc>https://notfenixio.is-a.dev/countdown</loc>
       <changefreq>weekly</changefreq>
-
    </url>
-
    <url>
-
-      <loc>https://notfenixio.github.io/minigame.html</loc>
-
+      <loc>https://notfenixio.is-a.dev/incidents</loc>
       <changefreq>weekly</changefreq>
-
-   </url>
-   
-   <url>
-
-      <loc>https://notfenixio.github.io/countdown.html</loc>
-
-      <changefreq>weekly</changefreq>
-
    </url>
 </urlset>
