@@ -42,7 +42,7 @@ jobs:
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://notfenixio.github.io
+          base-url-path: https://notfenixio.is-a.dev
 
       - name: Output stats
         run: |
