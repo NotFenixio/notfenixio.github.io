@@ -18,26 +18,30 @@
    </url>
    <url>
       <loc>https://notfenixio.is-a.dev/favorite</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>yearly</changefreq>
    </url>
    <url>
       <loc>https://notfenixio.is-a.dev/projects</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>yearly</changefreq>
    </url>
    <url>
       <loc>https://notfenixio.is-a.dev/museum</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>yearly</changefreq>
    </url>
    <url>
       <loc>https://notfenixio.is-a.dev/minigame</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>yearly</changefreq>
    </url>
    <url>
       <loc>https://notfenixio.is-a.dev/countdown</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>yearly</changefreq>
    </url>
    <url>
       <loc>https://notfenixio.is-a.dev/incidents</loc>
+      <changefreq>yearly</changefreq>
+   </url>
+   <url>
+      <loc>https://notfenixio.is-a.dev/essays</loc>
       <changefreq>weekly</changefreq>
    </url>
 </urlset>
