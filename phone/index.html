@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Really Good Phone Number Picker</h2>
+
+<p>Phone Number:</p>
+
+<button onclick="changePhoneNumber('-')">-</button>
+<input type="text" id="phoneNum" value="0000000000" readonly>
+<button onclick="changePhoneNumber('+')">+</button>
+
+<audio id="boomSound" src="boom.mp3" preload="auto"></audio>
+
+<script>
+// all code by joshatticus
+var phoneNumber = 0;
+var boomSound = document.getElementById("boomSound");
+
+function changePhoneNumber(operation) {
+  if (operation === '+') {
+    if (phoneNumber < 9999999999) {
+      phoneNumber++;
+    }
+  } else if (operation === '-') {
+    if (phoneNumber > 0) {
+      phoneNumber--;
+    }
+  }
+
+  document.getElementById("phoneNum").value = pad(phoneNumber, 10);
+  
+  var clone = boomSound.cloneNode();
+  clone.play();
+}
+
+function pad(num, size) {
+  var s = num+"";
+  while (s.length < size) s = "0" + s;
+  return s;
+}
+</script>
+
+</body>
+</html>
