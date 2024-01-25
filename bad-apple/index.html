@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Bad Apple</title>
+</head>
+<body>
+    <h1>ASCII Bad Apple</h1>
+
+    <script>
+        // Function to fetch content from the URL
+        async function fetchAndDisplay() {
+            try {
+                const response = await fetch('https://raw.githubusercontent.com/Chion82/ASCII_bad_apple/master/play.txt');
+                const text = await response.text();
+
+                // Split the text using the "SPLIT" delimiter
+                const frames = text.split('SPLIT');
+
+                // Display each frame at a certain FPS (adjust as needed)
+                const fps = 10; // Frames per second
+                const frameDuration = 1000 / fps;
+
+                frames.forEach((frame, index) => {
+                    setTimeout(() => {
+                        document.getElementById('ascii-video').innerText = frame;
+                    }, index * frameDuration);
+                });
+            } catch (error) {
+                console.error('Error fetching or displaying the ASCII art:', error);
+            }
+        }
+
+        // Call the fetchAndDisplay function when the page loads
+        window.onload = fetchAndDisplay;
+    </script>
+
+    <p id="ascii-video" style="font-family: monospace; white-space: pre;"></p>
+</body>
+</html>
