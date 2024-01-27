@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Meower Statistics</title>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div id="live-count" class="text-center">
+        <p class="text-4xl">Posts: <span id="post-count" class="text-4xl font-bold">0</span></p>
+        <p class="text-4xl">Users: <span id="user-count" class="text-4xl font-bold">0</span></p>
+        <p class="text-4xl">Chats: <span id="chat-count" class="text-4xl font-bold">0</span></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // function to fetch and update statistics
+            function updateStatistics() {
+                fetch('https://api.meower.org/statistics')
+                    .then(response => response.json())
+                    .then(data => {
+                        // update the counts on the page
+                        document.getElementById('chat-count').innerText = data.chats;
+                        document.getElementById('post-count').innerText = data.posts;
+                        document.getElementById('user-count').innerText = data.users;
+                    })
+                    .catch(error => {
+                        console.error('error fetching statistics:', error);
+                    });
+            }
+
+            // initial update when the page loads
+            updateStatistics();
+
+            // set an interval to update
+            setInterval(updateStatistics, 2000);
+        });
+    </script>
+</body>
+</html>
