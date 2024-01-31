@@ -1,5 +1,5 @@
 let counter = 60;
-var date = new Date("March 21, 2024 13:00:00").getTime();
+var date = new Date("March 22, 2024 13:00:00").getTime();
 let Cdays = document.getElementById('days');
 let Chours = document.getElementById('hours');
 let Cminutes = document.getElementById('minutes');
