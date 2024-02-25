@@ -5,34 +5,6 @@
       <changefreq>monthly</changefreq>
    </url>
    <url>
-      <loc>https://notfenixio.is-a.dev/dummy.pdf</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>https://notfenixio.is-a.dev/index</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>https://notfenixio.is-a.dev/README.md</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>https://notfenixio.is-a.dev/favorite</loc>
-      <changefreq>yearly</changefreq>
-   </url>
-   <url>
-      <loc>https://notfenixio.is-a.dev/projects</loc>
-      <changefreq>yearly</changefreq>
-   </url>
-   <url>
-      <loc>https://notfenixio.is-a.dev/museum</loc>
-      <changefreq>yearly</changefreq>
-   </url>
-   <url>
-      <loc>https://notfenixio.is-a.dev/minigame</loc>
-      <changefreq>yearly</changefreq>
-   </url>
-   <url>
       <loc>https://notfenixio.is-a.dev/countdown</loc>
       <changefreq>yearly</changefreq>
    </url>
@@ -41,7 +13,19 @@
       <changefreq>yearly</changefreq>
    </url>
    <url>
-      <loc>https://notfenixio.is-a.dev/essays</loc>
-      <changefreq>weekly</changefreq>
+      <loc>https://notfenixio.is-a.dev/comments</loc>
+      <changefreq>yearly</changefreq>
+   </url>
+   <url>
+      <loc>https://notfenixio.is-a.dev/bad-apple</loc>
+      <changefreq>yearly</changefreq>
+   </url>
+   <url>
+      <loc>https://notfenixio.is-a.dev/meower-statistics</loc>
+      <changefreq>yearly</changefreq>
+   </url>
+   <url>
+      <loc>https://notfenixio.is-a.dev/phone</loc>
+      <changefreq>yearly</changefreq>
    </url>
 </urlset>
