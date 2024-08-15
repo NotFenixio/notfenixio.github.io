@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Inter, system-ui, Avenir;
+}
+
+body {
+  @apply bg-zinc-900;
+  @apply text-white;
+}
+
+.spoiler {
+  @apply bg-zinc-800;
+  border-radius: 0.2em;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.spoiler-hidden {
+  @apply bg-zinc-800;
+  color: transparent;
+}
+
+.spoiler:not(.spoiler-hidden) {
+  background: #3333334d;
+  color: inherit;
+}
+
+#project {
+  transition-duration: 300ms;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
