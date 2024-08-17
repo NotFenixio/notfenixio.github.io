@@ -6,8 +6,9 @@ export function App() {
     <div className="scroll-smooth">
       <MainContent />
       <Menu title="Menu" triggerName="☰">
-        <div className="flex">
-          <a href="/test" className="underline hover:font-semibold">Open test page</a>
+        <div className="flex *:underline *:hover:font-semibold">
+          <p>Main page (you're currently here)</p>
+          <a href="/blog">Blog</a>
         </div>
       </Menu>
     </div>
