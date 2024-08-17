@@ -231,6 +231,12 @@ export function MainContent() {
             link="https://github.com/SnarpleDev/Voyager/"
           />
           <Project
+            name="GenIdea"
+            image="./media/images/genidea.png"
+            link="https://notfenixio.is-a.dev/GenIdea/"
+            description="A visually pleasing ideas generator."
+          />
+          <Project
             name="OwOBot"
             description="A bot for the Meower social media, that resembles in some way the functioning of the original OwO Discord bot. Written in TS using RoarBot."
           />
