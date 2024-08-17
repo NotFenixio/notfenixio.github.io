@@ -14,12 +14,12 @@ export function Project({ name, image, description, link }: ProjectProps) {
           target="_blank"
           rel="noreferrer"
           id="project"
-          className="flex flex-col items-center bg-zinc-800 rounded-lg overflow-hidden border-zinc-600 border"
+          className="flex flex-col bg-zinc-800 rounded-lg overflow-hidden border-zinc-600 border"
         >
           <img
             src={image}
             alt={name}
-            className="w-full h-60 object-scale-down rounded-md"
+            className="w-full h-60 rounded-md rounded-b-none object-cover"
           />
           <div className="p-4">
             <h3 className="text-xl font-bold text-white">{name}</h3>
@@ -29,7 +29,7 @@ export function Project({ name, image, description, link }: ProjectProps) {
       );
     } else {
       return (
-        <div className="flex flex-col items-center bg-zinc-800 rounded-lg overflow-hidden" id="project">
+        <div className="flex flex-col bg-zinc-800 rounded-lg overflow-hidden" id="project">
           <img
             src={image}
             alt={name}

@@ -226,7 +226,6 @@ export function MainContent() {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2">
           <Project
             name="Voyager"
-            image="./media/images/voyager.png"
             description="An indexer for the Scratch Forums written in Python, that was supposed to be a replacement for ScratchDB."
             link="https://github.com/SnarpleDev/Voyager/"
           />
@@ -237,17 +236,17 @@ export function MainContent() {
             description="A visually pleasing ideas generator."
           />
           <Project
+            name="Meower Auth"
+            link="https://github.com/NotFenixio/meowerauth"
+            description="A service that lets developers confirm a user's identity through an easy-to-use API."
+          />
+          <Project
             name="OwOBot"
             description="A bot for the Meower social media, that resembles in some way the functioning of the original OwO Discord bot. Written in TS using RoarBot."
           />
           <Project
             name="BadBot"
             description="Another bot for the Meower social media. It was the biggest bot and first bot to have AI integrated. Was written in Python using MeowerBot.py and is semi deprecated."
-          />
-          <Project
-            name="Meower Auth"
-            link="https://github.com/NotFenixio/meowerauth"
-            description="A service that lets developers confirm a user's identity through an easy-to-use API."
           />
         </div>
       </div>
