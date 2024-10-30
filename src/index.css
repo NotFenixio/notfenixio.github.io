@@ -1,37 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: Inter, system-ui, Avenir;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  @apply bg-zinc-900;
-  @apply text-white;
-}
-
-.spoiler {
-  @apply bg-zinc-800;
-  border-radius: 0.2em;
-  color: transparent;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.spoiler-hidden {
-  @apply bg-zinc-800;
-  color: transparent;
-}
-
-.spoiler:not(.spoiler-hidden) {
-  background: #3333334d;
-  color: inherit;
-}
-
-#project {
-  transition-duration: 300ms;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  transform: rotate3d(0);
+.syne-syne {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
